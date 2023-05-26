@@ -21,6 +21,7 @@ return new class extends Migration
             $table->boolean("is_displayed")->default("false");
             $table->integer("user_id")->unsigned();
             $table->foreign("user_id")
+                ->references("id")
                 ->on("user")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");

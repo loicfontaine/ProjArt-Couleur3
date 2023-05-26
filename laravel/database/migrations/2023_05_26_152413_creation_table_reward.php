@@ -18,14 +18,17 @@ return new class extends Migration
             $table->integer("user_id")->unsigned();
             $table->integer("participation_id")->unsigned();
             $table->foreign("article_id")
+                ->references("id")
                 ->on("article")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
             $table->foreign("user_id")
+                ->references("id")
                 ->on("user")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
             $table->foreign("participation_id")
+                ->references("id")
                 ->on("participation")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");

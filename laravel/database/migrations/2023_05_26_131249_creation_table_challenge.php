@@ -20,13 +20,15 @@ return new class extends Migration
             $table->boolean("is_contest")->default("false");
             $table->integer("ColorCoins_earned_by_participation");
             $table->integer("reward_id")->unsigned();
-            $table->integer("user_id")->unsigned()->nullable();
+            $table->integer("user_id")->unsigned();
             $table->foreign("reward_id")
+                ->references("id")
                 ->on("reward")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
 
             $table->foreign("user_id")
+                ->references("id")
                 ->on("user")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
