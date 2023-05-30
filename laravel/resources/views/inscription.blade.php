@@ -2,7 +2,7 @@
 @section('header')
 @section('content')
 <div class='titre FontInter'>
-    <h1>Connexion</h1>
+    <h1>Inscription</h1>
 </div>
 
 @endsection
