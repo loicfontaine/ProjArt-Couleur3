@@ -7,7 +7,7 @@
     
 <!-- mettre css et js -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <script src="{{asset('js/maing.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 
 
 
