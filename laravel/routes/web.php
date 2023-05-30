@@ -18,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/connexion', function () {
     return view('connexion');
 });
+
+
+Route::get('/', function () {
+    return view('test');
+});
