@@ -15,6 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string("title", 150);
             $table->text("description");
+            $table->integer("duration");
             $table->integer("user_id")->unsigned();
             $table->foreign("user_id")
                 ->references("id")
