@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ma première vue Laravel</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Bienvenue sur mon site Laravel</h1>
-        <p>C'est ma première vue Laravel !</p>
+@extends('template')
+@section('title')
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Challenge</h1>
+            <p>Challenge</p>
+        </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
-</html>
+@endsection
