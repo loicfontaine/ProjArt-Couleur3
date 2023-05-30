@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/challenge', function () {
-    return view('challenge');
+Route::get('/connexion', function () {
+    return view('connexion');
 });
