@@ -1,28 +1,40 @@
 @extends('template')
 @section('header')
 @section('content')
+<img src="img/logoCouleur3.jpg" class='logoC3'>
 <div class='FontInter'>
     <h1 class='titre'>Inscription</h1>
+    <hr>
     <span id='trait'></span>
-    <form id='inscription'>
-      <input class='inscription' type="text" v-model="firstName" placeholder="Prénom">
-        <input class='inscription' type="text" v-model="lastName" placeholder="Nom">
-        <input class='inscription' type="text" v-model="username" placeholder="Nom d'utilisateur">
-        <input class='inscription' type="email" v-model="email" placeholder="Adresse e-mail">
-        <input class='inscription' type="number" v-model="phone" placeholder="Numéro de téléphone">
-        <input class='inscription' type="password" v-model="password" placeholder="Mot de passe">
-        <input class='inscription' type="text" v-model="address" placeholder="Adresse">
-        <label>
-            <input type="checkbox" v-model="checkedOptions" value="option1">
-            J'accepte les conditions d'utilisation
-        </label>
-        <label>
-            <input type="checkbox" v-model="checkedOptions" value="option1">
+    <div class='input-container'>
+      <form>
+        <input class='inscription border-placeholder' type="text" v-model="firstName">
+        <span class='placeholder-haut FontInter'>Prénom*</span>
+        <input class='inscription border-placeholder' type="text" v-model="lastName">
+        <span class='placeholder-haut FontInter'>Nom*</span>
+        <input class='inscription border-placeholder' type="text" v-model="username">
+        <span class='placeholder-haut FontInter'>Nom d'utilisateur*</span>
+        <input class='inscription border-placeholder' type="email" v-model="email">
+        <span class='placeholder-haut FontInter'>Adresse e-mail*</span>
+        <input class='inscription border-placeholder' type="number" v-model="phone">
+        <span class='placeholder-haut FontInter'>Numéro de téléphone</span>
+        <input class='inscription border-placeholder' type="password" v-model="password">
+        <span class='placeholder-haut FontInter'>Mot de passe*</span>
+        <input class='inscription border-placeholder' type="text" v-model="address">
+        <span class='placeholder-haut FontInter'>Adresse</span>
+        <div class='basForm'>
+          <label class='checkbox'>
+              J'accepte les conditions d'utilisation
+              <input type="checkbox" v-model="checkedOptions" value="option1">
+          </label>
+          <label class='checkbox'>
             J'accepte la charte de confidentialité
-        </label>
-   
-      <button type="submit">S'inscrire</button>
+            <input type="checkbox" v-model="checkedOptions" value="option1">
+          </label>
+        <button type="submit" class='submit'>S'inscrire</button>
+      </div>
     </form>
+    </div>
 
     <script>
   export default {
@@ -45,3 +57,4 @@
     }
   };
   </script>
+  @endsection
