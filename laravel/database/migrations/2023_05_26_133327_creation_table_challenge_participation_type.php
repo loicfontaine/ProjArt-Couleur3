@@ -15,12 +15,13 @@ return new class extends Migration
             $table->increments('id');
             $table->integer("challenge_id")->unsigned();
             $table->integer("participation_type_id")->unsigned();
-            $table->foreign("challenge_id")->references("id")->on("challenge")
+            $table->foreign("challenge_id")->references("id")->on("challenges")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
-            $table->foreign("participation_type_id")->references("id")->on("participation_type")
+            $table->foreign("participation_type_id")->references("id")->on("participation_types")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
+            $table->unique(['challenge_id', 'participation_type_id']);
         });
     }
 

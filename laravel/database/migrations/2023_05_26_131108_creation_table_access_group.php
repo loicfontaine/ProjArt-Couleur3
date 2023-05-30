@@ -15,12 +15,13 @@ return new class extends Migration
             $table->increments('id');
             $table->integer("group_id")->unsigned();
             $table->integer("access_id")->unsigned();
-            $table->foreign("group_id")->references("id")->on("group")
+            $table->foreign("group_id")->references("id")->on("groups")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
-            $table->foreign("access_id")->references("id")->on("access")
+            $table->foreign("access_id")->references("id")->on("accesses")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
+            $table->unique(['group_id', 'access_id']);
         });
     }
 

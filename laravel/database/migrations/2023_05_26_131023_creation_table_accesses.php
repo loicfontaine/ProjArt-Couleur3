@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('participation_type', function (Blueprint $table) {
+        Schema::create('accesses', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("title", 50);
-            $table->text("content");
+            $table->string('title', 100)->unique();
         });
     }
 
@@ -23,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('participation_type');
+        Schema::dropIfExists('accesses');
     }
 };

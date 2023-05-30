@@ -11,18 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('article', function (Blueprint $table) {
+        Schema::create('participations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 100);
-            $table->text('description');
-            $table->string("image", "50");
-            $table->integer("price");
-            $table->integer("nb_stock");
-            $table->boolean("is_displayed")->default("false");
+            $table->integer("challenge_id")->unsigned();
             $table->integer("user_id")->unsigned();
+            $table->foreign("challenge_id")
+                ->references("id")
+                ->on("challenge")
+                ->onDelete("restrict")
+                ->onUpdate("restrict");
+
             $table->foreign("user_id")
                 ->references("id")
-                ->on("user")
+                ->on("users")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
         });
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('article');
+        Schema::dropIfExists('participations');
     }
 };

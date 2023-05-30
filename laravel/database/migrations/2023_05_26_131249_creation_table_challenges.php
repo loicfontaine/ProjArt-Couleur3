@@ -11,25 +11,25 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reward', function (Blueprint $table) {
+        Schema::create('challenges', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('quantity');
-            $table->integer("article_id")->unsigned();
+            $table->string('name', 100);
+            $table->text('description');
+            $table->timestamp("start_time");
+            $table->timestamp("end_time");
+            $table->boolean("is_contest")->default("false");
+            $table->integer("ColorCoins_earned_by_participation")->default(0);
+            $table->integer("reward_id")->unsigned()->nullable();
             $table->integer("user_id")->unsigned();
-            $table->integer("participation_id")->unsigned();
-            $table->foreign("article_id")
+            $table->foreign("reward_id")
                 ->references("id")
-                ->on("article")
+                ->on("rewards")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
+
             $table->foreign("user_id")
                 ->references("id")
-                ->on("user")
-                ->onDelete("restrict")
-                ->onUpdate("restrict");
-            $table->foreign("participation_id")
-                ->references("id")
-                ->on("participation")
+                ->on("users")
                 ->onDelete("restrict")
                 ->onUpdate("restrict");
         });
@@ -40,6 +40,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reward');
+        Schema::dropIfExists('challenges');
     }
 };

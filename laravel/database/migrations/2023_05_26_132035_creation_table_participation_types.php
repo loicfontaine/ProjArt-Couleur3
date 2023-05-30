@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('access', function (Blueprint $table) {
+        Schema::create('participation_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title', 100);
+            $table->string("title", 50);
+            $table->text("content");
         });
     }
 
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('access');
+        Schema::dropIfExists('participation_types');
     }
 };
