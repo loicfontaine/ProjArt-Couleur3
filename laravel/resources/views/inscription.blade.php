@@ -1,0 +1,60 @@
+@extends('template')
+@section('header')
+@section('content')
+<img src="img/logoCouleur3.jpg" class='logoC3'>
+<div class='FontInter'>
+    <h1 class='titre'>Inscription</h1>
+    <hr>
+    <span id='trait'></span>
+    <div class='input-container'>
+      <form>
+        <input class='inscription border-placeholder' type="text" v-model="firstName">
+        <span class='placeholder-haut FontInter'>Prénom*</span>
+        <input class='inscription border-placeholder' type="text" v-model="lastName">
+        <span class='placeholder-haut FontInter'>Nom*</span>
+        <input class='inscription border-placeholder' type="text" v-model="username">
+        <span class='placeholder-haut FontInter'>Nom d'utilisateur*</span>
+        <input class='inscription border-placeholder' type="email" v-model="email">
+        <span class='placeholder-haut FontInter'>Adresse e-mail*</span>
+        <input class='inscription border-placeholder' type="number" v-model="phone">
+        <span class='placeholder-haut FontInter'>Numéro de téléphone</span>
+        <input class='inscription border-placeholder' type="password" v-model="password">
+        <span class='placeholder-haut FontInter'>Mot de passe*</span>
+        <input class='inscription border-placeholder' type="text" v-model="address">
+        <span class='placeholder-haut FontInter'>Adresse</span>
+        <div class='basForm'>
+          <label class='checkbox'>
+              J'accepte les conditions d'utilisation
+              <input type="checkbox" v-model="checkedOptions" value="option1">
+          </label>
+          <label class='checkbox'>
+            J'accepte la charte de confidentialité
+            <input type="checkbox" v-model="checkedOptions" value="option1">
+          </label>
+        <button type="submit" class='submit'>S'inscrire</button>
+      </div>
+    </form>
+    </div>
+
+    <script>
+  export default {
+    data() {
+      return {
+        firstName: '',
+        lastName: '',
+        username: '',
+        email: '',
+        phone: '',
+        password: '',
+        address: '',
+        
+      };
+    },
+    methods: {
+      submitForm() {
+        // Traitement de la soumission du formulaire ici (par exemple, appel à une API Laravel)
+      }
+    }
+  };
+  </script>
+  @endsection
