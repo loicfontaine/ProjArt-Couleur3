@@ -1,4 +1,4 @@
 @extends("template")
-@section("header")
+@section("footer")
     
 @endsection
