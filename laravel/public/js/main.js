@@ -1,1 +1,3 @@
-console.log("Hello World");
+import FormComponent from "./components/FormComponent.vue";
+
+Vue.component("FormComponent", FormComponent);
