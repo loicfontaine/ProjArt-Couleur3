@@ -103,6 +103,7 @@ body {
     color: #F4F1E9;
 }
 
+<<<<<<< HEAD
 /*-------- Inscription --------*/
 #inscription {
     display: flex;
@@ -131,6 +132,18 @@ input.inscription {
     font-size: 22px;
     text-align: center;
 }
+=======
+#navigationHeader {
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+>>>>>>> 9c2064326c72ef556edc8c964157bc18b8e898a9
 
 
 

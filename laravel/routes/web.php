@@ -15,6 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 
 
+<<<<<<< HEAD
 Route::get('/inscription', function () {
     return view('inscription');
 });
+=======
+Route::get('/connexion', function () {
+    return view('connexion');
+});
+
+
+Route::get('/test', function () {
+    return view('test');
+});
+>>>>>>> 9c2064326c72ef556edc8c964157bc18b8e898a9
