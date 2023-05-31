@@ -1,11 +1,13 @@
 @extends('template')
 @section('header')
 @section('content')
+<div id='img'>
 <img src="img/logoCouleur3.jpg" class='logoC3'>
+</div>
 <div class='FontInter'>
     <h1 class='titre'>Inscription</h1>
-    <hr>
-    <span id='trait'></span>
+    <hr id='separation'>
+
     <div class='input-container'>
       <form>
         <input class='inscription border-placeholder' type="text" v-model="firstName">
@@ -23,17 +25,21 @@
         <input class='inscription border-placeholder' type="text" v-model="address">
         <span class='placeholder-haut FontInter'>Adresse</span>
         <div class='basForm'>
-          <label class='checkbox'>
+          <div class='condition'>
+            <label class='checkbox'>
               J'accepte les conditions d'utilisation
-              <input type="checkbox" v-model="checkedOptions" value="option1">
-          </label>
-          <label class='checkbox'>
+              <input type="checkbox" class='checkbox-round' v-model="checkedOptions" value="option1">
+            </label>
+            <hr class='separation2'>
+            <label class='checkbox'>
             J'accepte la charte de confidentialité
-            <input type="checkbox" v-model="checkedOptions" value="option1">
-          </label>
-        <button type="submit" class='submit'>S'inscrire</button>
-      </div>
-    </form>
+              <input type="checkbox" class='checkbox-round' v-model="checkedOptions" value="option1">
+            </label>
+            <hr class='separation2'>
+          </div>
+          <button type="submit" class='submit'>S'inscrire</button>
+        </div>
+      </form>
     </div>
 
     <script>
