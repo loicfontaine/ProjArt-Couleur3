@@ -1,6 +1,6 @@
 @extends('template')
 @section('css')
-<link rel="stylesheet" href="{{asset('css/inscription.css')}}">
+<link rel="stylesheet" href="{{asset('css/connexion.css')}}">
 
 @endsection
 @section('content')
