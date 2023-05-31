@@ -40,7 +40,20 @@
           </label>
           <hr class='separation2'>
         </div>
+
         <button a href="{{route('user.create')}}" type="submit" class='submit'>S'inscrire</button>
+
+      </form>
+    </div>
+
+    <div class='FontInter compte'>
+      <p class='p1'>Vous avez déjà un compte ? <a href='connexion' class='p2'>Connectez-vous</a></p>
+      <p class='p1'>ou</p>
+      <div class='bouton FontInter'>
+        <button class='apple'>Connexion avec Apple</button>
+        <button class='facebook'>Connexion avec Facebook</button>
+        <button class='google'>Connexion avec Google</button>
+
       </div>
     </form>
   </div>
@@ -53,6 +66,7 @@
       <button class='facebook'>Connexion avec Facebook</button>
       <button class='google'>Connexion avec Google</button>
     </div>
+
   </div>
 
 
@@ -79,3 +93,30 @@
     };
   </script>
   @endsection
+
+    
+      
+<!--
+    <script>
+  export default {
+    data() {
+      return {
+        firstName: '',
+        lastName: '',
+        username: '',
+        email: '',
+        phone: '',
+        password: '',
+        address: '',
+        
+      };
+    },
+    methods: {
+      submitForm() {
+        // Traitement de la soumission du formulaire ici (par exemple, appel à une API Laravel)
+      }
+    }
+  };
+  </script> -->
+  @endsection
+
