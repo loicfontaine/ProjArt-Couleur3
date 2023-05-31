@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <div id='img'>
-<img src="img/logoCouleur3.jpg" class='logoC3'>
+<img src="img/RTSCouleur3.png" class='logoC3'>
 </div>
 <div class='FontInter'>
     <h1 class='titre'>Inscription</h1>
@@ -40,7 +40,7 @@
             </label>
             <hr class='separation2'>
           </div>
-          <button type="submit" class='submit'>S'inscrire</button>
+          <button a href="{{route('user.create')}}" type="submit" class='submit'>S'inscrire</button>
         </div>
       </form>
     </div>
