@@ -1,0 +1,28 @@
+/*-------- HomePage --------*/
+
+.actualiteContainer, .videoContainer img {
+    max-width: 400px;
+    max-height: 100%;
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    
+    .actualiteContainer, .videoContainer{
+      flex-direction: column;
+      justify-content: center;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+.actualiteContainer, .videoContainer {
+    display: flex;
+}
+
+
+
+
+
+
