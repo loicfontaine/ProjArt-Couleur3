@@ -103,6 +103,7 @@ body {
     color: #F4F1E9;
 }
 
+/*-------- Header --------*/
 #navigationHeader {
     height: 50px;
     width: auto;
@@ -156,8 +157,14 @@ input.inscription {
 
 }
 
-hr {
+hr#separation {
     width: 226px;
+}
+
+hr.separation2 {
+    width: 226px;
+    border: 0.2px solid grey;
+    opacity: 0.5;
 }
 
 .titre {
@@ -173,6 +180,8 @@ hr {
 .checkbox {
     font-size: 10px;
     color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .basForm {
@@ -194,7 +203,37 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: grey 3px 3px 3px;
+}
 
+#img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkbox-round {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #E60096;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: #E60096;
+}
+
+.condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
