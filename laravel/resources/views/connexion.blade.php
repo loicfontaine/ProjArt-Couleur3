@@ -36,6 +36,7 @@
         <button class='google'>Connexion avec Google</button>
       </div>
     </div>
+
     <!--
     <script>
         var bouton = document.getElementById('create');
