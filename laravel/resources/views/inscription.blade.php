@@ -4,9 +4,6 @@
 
 @endsection
 @section('content')
-<div id='img'>
-<img src="img/RTSCouleur3.png" class='logoC3'>
-</div>
 <div class='FontInter'>
     <h1 class='titre'>Inscription</h1>
     <hr id='separation'>
@@ -44,10 +41,10 @@
         </div>
       </form>
     </div>
+
     <div class='FontInter compte'>
       <p class='p1'>Vous avez déjà un compte ? <a href='connexion' class='p2'>Connectez-vous</a></p>
       <p class='p1'>ou</p>
-    
       <div class='bouton FontInter'>
         <button class='apple'>Connexion avec Apple</button>
         <button class='facebook'>Connexion avec Facebook</button>
@@ -56,7 +53,7 @@
     </div>
     
       
-
+<!--
     <script>
   export default {
     data() {
@@ -77,5 +74,5 @@
       }
     }
   };
-  </script>
+  </script> -->
   @endsection
