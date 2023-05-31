@@ -4,9 +4,6 @@
 
 @endsection
 @section('content')
-<div id='img'>
-<img src="img/RTSCouleur3.png" class='logoC3'>
-</div>
 <div class='FontInter'>
     <h1 class='titre'>Inscription</h1>
     <hr id='separation'>

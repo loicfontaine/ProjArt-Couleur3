@@ -6,9 +6,6 @@
 <script src="{{asset('js/connexion.js')}}"></script>
 @endsection
 @section('content')
-<div id='img'>
-<img src="img/RTSCouleur3.png" class='logoC3'>
-</div>
 <div class='FontInter'>
     <h1 class='titre'>Connexion</h1>
     <hr class='separation'>
