@@ -1,6 +1,7 @@
 @extends('template')
 @section('css')
 <link rel="stylesheet" href="{{asset('css/inscription.css')}}">
+
 @endsection
 @section('content')
 <div id='img'>
@@ -20,7 +21,7 @@
         <span class='placeholder-haut FontInter'>Nom d'utilisateur*</span>
         <input class='inscription border-placeholder' type="email" v-model="email">
         <span class='placeholder-haut FontInter'>Adresse e-mail*</span>
-        <input class='inscription border-placeholder' type="number" v-model="phone">
+        <input class='inscription border-placeholder' type="tel" v-model="phone">
         <span class='placeholder-haut FontInter'>Numéro de téléphone</span>
         <input class='inscription border-placeholder' type="password" v-model="password">
         <span class='placeholder-haut FontInter'>Mot de passe*</span>
@@ -43,6 +44,18 @@
         </div>
       </form>
     </div>
+    <div class='FontInter compte'>
+      <p class='p1'>Vous avez déjà un compte ? <a href='connexion' class='p2'>Connectez-vous</a></p>
+      <p class='p1'>ou</p>
+    
+      <div class='bouton FontInter'>
+        <button class='apple'>Connexion avec Apple</button>
+        <button class='facebook'>Connexion avec Facebook</button>
+        <button class='google'>Connexion avec Google</button>
+      </div>
+    </div>
+    
+      
 
     <script>
   export default {

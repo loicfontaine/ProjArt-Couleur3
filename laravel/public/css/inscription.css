@@ -137,3 +137,42 @@ hr.separation2 {
 .gris {
     color: #F4F1E9;
 }
+
+.p1 {
+    font-size: 1rem;  
+}
+
+
+.compte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a.p2 {
+    color: #E60096;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apple, .facebook, .google {
+    width: 226px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.apple-icon {
+    font-size: 24px;
+    color:black;
+  }
