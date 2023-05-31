@@ -1,5 +1,7 @@
 @extends('template')
-@section('header')
+@section('css')
+<link rel="stylesheet" href="{{asset('css/inscription.css')}}">
+@endsection
 @section('content')
 <div id='img'>
 <img src="img/logoCouleur3.jpg" class='logoC3'>
