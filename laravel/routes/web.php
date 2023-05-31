@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,5 @@ Route::get('/inscription', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::resource('user', UserController::class);
