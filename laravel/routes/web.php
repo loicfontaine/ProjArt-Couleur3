@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,8 +26,16 @@ Route::get('/', function () {
 Route::get('/inscription', function () {
     return view('inscription');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+Route::get('/connexion', function () {
+    return view('connexion');
+});
 
 
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::resource('user', UserController::class);

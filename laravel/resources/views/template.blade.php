@@ -17,7 +17,7 @@
 </head>
 <body>
     <nav id="navigationHeader" class="noir">
-        <div>
+        <div class="navigationHeaderItem">
             <svg width="35" height="35" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_31_161)">
             <path d="M12.2648 5.78668H12.7358C14.2713 5.78668 15.5165 7.03191 15.5165 8.5674V10.921C15.5165 12.4565 14.2713 13.7017 12.7358 13.7017H12.2648C10.7294 13.7017 9.48413 12.4565 9.48413 10.921V8.5674C9.48413 7.03182 10.7288 5.78668 12.2648 5.78668Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -31,7 +31,7 @@
             </defs>
             </svg>
         </div>
-        <div>
+        <div class="navigationHeaderItem">
             <a href="https://rts.ch" target="blank">
                 <svg width="91" height="33" viewBox="0 0 91 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_31_168)">
@@ -50,14 +50,71 @@
                     </svg>
             </a>
         </div>
-        <div>
+        <div class="navigationHeaderItem">
             <svg width="35" height="35" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C5.17157 12 4.5 11.3284 4.5 10.5C4.5 9.67157 5.17157 9 6 9H30C30.8284 9 31.5 9.67157 31.5 10.5C31.5 11.3284 30.8284 12 30 12H6ZM4.5 18C4.5 18.8284 5.17157 19.5 6 19.5H30C30.8284 19.5 31.5 18.8284 31.5 18C31.5 17.1716 30.8284 16.5 30 16.5H6C5.17157 16.5 4.5 17.1716 4.5 18ZM4.5 25.5C4.5 26.3284 5.17157 27 6 27H30C30.8284 27 31.5 26.3284 31.5 25.5C31.5 24.6716 30.8284 24 30 24H6C5.17157 24 4.5 24.6716 4.5 25.5Z" fill="white"/>
                 </svg>
                 
         </div>
     </nav>
+    <img class=".logoC3" src="RTSCouleur3.png" alt="logo couleur 3">
     @yield("content")
-    @yield("footer")
+    <footer id="footer">
+        <div class="footerNav">
+            <a class="footerLink FontMonserrat" href="">Aide et support</a>
+        </div>
+        <div class="footerNav">
+            <a class="footerLink FontMonserrat" href="">Mon compte</a>
+        </div>
+        <div class="footerNav">
+            <a class="footerLink FontMonserrat" href="">Retour en haut</a>
+        </div>
+        <div class="footerNav footerNavLast">
+            <a class="footerIcons" href="">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="27" height="27" rx="8" fill="#6E6C6F"/>
+                <rect x="3" y="3" width="21" height="21" rx="2.30928" fill="#6E6C6F"/>
+                <path d="M22.1017 8.98712C21.8922 8.17993 21.277 7.5456 20.4943 7.32952C19.0754 6.9375 13.3895 6.9375 13.3895 6.9375C13.3895 6.9375 7.70365 6.9375 6.28629 7.32952C5.50353 7.5456 4.8884 8.17993 4.67886 8.98712C4.29871 10.4487 4.29871 13.5 4.29871 13.5C4.29871 13.5 4.29871 16.5513 4.67886 18.0129C4.8884 18.8201 5.50353 19.4544 6.28629 19.6705C7.70365 20.0625 13.3895 20.0625 13.3895 20.0625C13.3895 20.0625 19.0754 20.0625 20.4928 19.6705C21.2755 19.4544 21.8907 18.8201 22.1002 18.0129C22.4804 16.5513 22.4804 13.5 22.4804 13.5C22.4804 13.5 22.4804 10.4487 22.1002 8.98712H22.1017ZM11.5711 16.3121V10.6879L16.2946 13.5L11.5711 16.3121Z" fill="white"/>
+                </svg>
+            </a>
+            <a class="footerIcons" href="">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="27" height="27" rx="8" fill="#6E6C6F"/>
+                <rect x="3" y="3" width="21" height="21" rx="2.4375" fill="#6E6C6F"/>
+                <rect x="5.59741" y="5.625" width="15.5843" height="15.7501" rx="3.65625" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3896 17.6087C15.6349 17.6087 17.455 15.7691 17.455 13.4999C17.455 11.2308 15.6349 9.39124 13.3896 9.39124C11.1443 9.39124 9.3241 11.2308 9.3241 13.4999C9.3241 15.7691 11.1443 17.6087 13.3896 17.6087Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1327 9.73368C18.694 9.73368 19.1491 9.27379 19.1491 8.7065C19.1491 8.1392 18.694 7.67932 18.1327 7.67932C17.5714 7.67932 17.1163 8.1392 17.1163 8.7065C17.1163 9.27379 17.5714 9.73368 18.1327 9.73368Z" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </a>
+            <a class="footerIcons" href="">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="27" height="27" rx="8" fill="#6E6C6F"/>
+                <rect x="3" y="3" width="21" height="21" rx="2.30928" fill="#6E6C6F"/>
+                <g clip-path="url(#clip0_0_1)">
+                <path d="M13.3895 4.96875C8.72725 4.96875 4.948 8.78819 4.948 13.5C4.948 18.2118 8.72725 22.0312 13.3895 22.0312C18.0517 22.0312 21.831 18.2118 21.831 13.5C21.831 8.78819 18.0517 4.96875 13.3895 4.96875ZM17.6313 11.8833C17.6355 11.9686 17.6355 12.0582 17.6355 12.1478C17.6355 14.865 15.5885 18.0002 11.8447 18.0002C10.6966 18.0002 9.62458 17.659 8.734 17.0703C8.89439 17.0917 9.05478 17.1002 9.21939 17.1002C10.1733 17.1002 11.0512 16.7717 11.7476 16.2215C10.857 16.2044 10.1057 15.6115 9.84828 14.7925C9.9749 14.8181 10.1015 14.8309 10.2324 14.8309C10.4181 14.8309 10.5996 14.8053 10.7684 14.7584C9.83561 14.5664 9.13497 13.7389 9.13497 12.7407V12.7151C9.40932 12.8687 9.72165 12.9625 10.0551 12.9711C9.5064 12.6042 9.14763 11.9729 9.14763 11.2605C9.14763 10.8852 9.24893 10.5311 9.42198 10.2283C10.4265 11.4738 11.9249 12.2928 13.6174 12.3781C13.5794 12.2288 13.5625 12.071 13.5625 11.9089C13.5625 10.7743 14.4742 9.85289 15.5969 9.85289C16.1836 9.85289 16.7112 10.1003 17.0826 10.5013C17.5469 10.4074 17.9816 10.2368 18.3742 10.0022C18.2222 10.4842 17.9014 10.8852 17.4794 11.1411C17.893 11.0899 18.2855 10.979 18.6485 10.8169C18.3742 11.2307 18.0281 11.5933 17.6313 11.8833Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_0_1">
+                <rect width="16.883" height="17.0625" fill="white" transform="translate(4.948 4.96875)"/>
+                </clipPath>
+                </defs>
+                </svg>                    
+            </a>
+            <a class="footerIcons" href="">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="27" height="27" rx="8" fill="#6E6C6F"/>
+                <rect x="3" y="3" width="21" height="21" rx="2.30928" fill="#6E6C6F"/>
+                <g clip-path="url(#clip0_0_1)">
+                <path d="M21.831 13.5521C21.831 8.81166 18.0516 4.96875 13.3895 4.96875C8.72737 4.96875 4.948 8.81166 4.948 13.5521C4.948 17.8363 8.03491 21.3873 12.0705 22.0312V16.0333H9.92715V13.5521H12.0705V11.6611C12.0705 9.5099 13.3308 8.32164 15.259 8.32164C16.1826 8.32164 17.1486 8.48928 17.1486 8.48928V10.6016H16.0842C15.0356 10.6016 14.7085 11.2633 14.7085 11.9421V13.5521H17.0497L16.6754 16.0333H14.7085V22.0312C18.744 21.3873 21.831 17.8365 21.831 13.5521Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_0_1">
+                <rect width="16.883" height="17.0625" fill="white" transform="translate(4.948 4.96875)"/>
+                </clipPath>
+                </defs>
+                </svg>                    
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
