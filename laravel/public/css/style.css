@@ -103,6 +103,30 @@ body {
     color: #F4F1E9;
 }
 
+<<<<<<< HEAD
+/*-------- HomePage --------*/
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    
+    .actualiteContainer{
+      flex-direction: column;
+      justify-content: center;
+    }
+    img {
+      width: 100%;
+    }
+
+  }
+
+.actualiteContainer{
+    display: flex;
+}
+=======
 #navigationHeader {
     height: 50px;
     width: auto;
@@ -198,6 +222,7 @@ hr {
 }
 
 
+>>>>>>> a39e0fe08a5c9311085dd4fa4cd13f6762429f14
 
 
 
