@@ -26,6 +26,12 @@ Route::get('/', function () {
 Route::get('/inscription', function () {
     return view('inscription');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+Route::get('/connexion', function () {
+    return view('connexion');
+});
 
 
 Route::get('/test', function () {
